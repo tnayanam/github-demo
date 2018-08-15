@@ -1,0 +1,78 @@
+https://www.udemy.com/git-started-with-github/learn/v4/t/lecture/2965913?start=0
+// Flow when repo is already created
+------------------------------------------------------------------------------------------
+1. install git bash
+2. in bash "git version" command will tell you which git version got installed
+3. in browser create a new repository in git hub website.
+4. in bash, you will be at the home location  but if you want to create local copy in a separate directory
+  - mkdir directoryname
+  - pwd (it tells about present working directory)
+  - cd directoryname
+ Now you will be at the current folder/location 
+5. now set the username and email
+ -git config --global user.name "Tanuj Nayanam"
+ -git config --global user.email "tnayanam@syr.edu"
+ check if its added properly
+  -git config --global --list
+  it should show the user and email set up.
+  
+  Copy of our own repository from git hub website to local system - this is also called as CLONING a repository. (for exaple repo name is: git-demo)
+   go to online and copy the repo clone address
+   in bash type 
+   - git clone theaddressofonlinerepo
+   now this will create the local repo in system
+   - ls shows the content in the pwd
+   - cd git-demo
+   - ls
+   - now here we will see just the readme file because thats what we created and is available on the github server.online as of now. if we had more file it will start showing now.. 
+   
+ Which branch currently you are working on?
+	- git status
+Clear the bash window
+    - clear
+Create a new file and add content to it
+	- echo "Test Git Quick Start" >> start.txt
+	this will create  file start.txt and it will add the content which is in double quotes
+See the content of a file
+	- cat start.txt
+	this will show the content of the file.
+Now if we do git status it will show that there is one uncommited file "red colour"
+    - git add start.txt
+	this puts the file in staging area
+	- git commit -m "new file added"
+	this puts file in commited area
+	and now our working directory is clean
+	- Now do a git push
+	- git push origin master  -> this push will go to master branch
+	
+	to go back to previois directory
+	- cd space ..
+	- ls tells you all the file thats listed in the directory
+	- ls -al tells you all the files that are hidden is included.
+------------------------------------------------------------------------
+When Empty project is getting created and you have to add it to the GIT
+------------------------------------------------------------------------
+- git init fresh-project       creates a fresh project in local directoryname
+ go to that folder and add a file now
+ - echo "New file" >> new.txt
+ now if you do git status it will tell you a red marked file which you jsut now created.
+ now do the same steps git add filename
+ git commit -m "commit message"
+
+ 
+ 
+
+
+	
+	
+    
+
+   
+	
+    
+   
+   
+  
+   
+  
+   
