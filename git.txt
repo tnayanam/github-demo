@@ -68,6 +68,8 @@ When Empty project is getting created and you have to add it to the GIT
  now add the extension which you want to ignore
  you need to add something like *.css to ignore all the file with extension .css
  
+ PENDING COMMITS
+ 
  Go to a Branch
  =================
  git checkout <branchname>
