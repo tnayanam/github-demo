@@ -66,7 +66,7 @@ When Empty project is getting created and you have to add it to the GIT
  now type ls -al
  this will show the ignore file that was created.
  now add the extension which you want to ignore
- you need to add something like *.css to ignore all the file with extension .css
+ you need to add something like *.css to ignore  all the file with extension .css
  
  PENDING COMMITS
  
@@ -79,6 +79,7 @@ When Empty project is getting created and you have to add it to the GIT
  git fetch origin
  git reset --hard origin/master 
 //test
+// test2
  
  
  
