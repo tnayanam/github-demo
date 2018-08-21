@@ -81,7 +81,20 @@ When Empty project is getting created and you have to add it to the GIT
 //test
 // test2
  
- 
+ Stash
+=========================
+Only when you dont want to commit a change list yet
+but you might have something staged meaning you might have clicked "git add" and then you might have local unstaged changes also. and that's totally
+fine.
+just use command
+"git stash"
+and it will stash the changes and you will have a clean working directory.
+if you want to see list of stash
+"git stash list"
+if you want to drop the stash you can say 
+"git stash drop"
+if you want to reapply git stash stuff just click git stash apply : it appplies the most recent stuff.
+
  
 
 
