@@ -77,7 +77,7 @@ When Empty project is getting created and you have to add it to the GIT
  Get rid of LocalChanges and get updated file from server
  ========================================================
  git fetch origin
- git reset --hard origin/master 
+ git reset --hard origin/maste r 
 
  
  
