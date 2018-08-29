@@ -99,6 +99,9 @@ if you want to drop the stash you can say
 "git stash drop"
 if you want to reapply git stash stuff just click git stash apply : it appplies the most recent stuff.
 
+Adding a collaborator:
+Go to the online repo and go to settings and add a collaborator.
+
  
 
 
