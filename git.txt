@@ -102,6 +102,31 @@ if you want to reapply git stash stuff just click git stash apply : it appplies 
 Adding a collaborator:
 Go to the online repo and go to settings and add a collaborator.
 
+
+adding a branch
+git checkout -b "my new branch"
+
+it will create a branch and switch it to that branch, now you can do git status and it will show you the branch you are in. :)
+
+Switching a branch
+Git checkout master
+Git checkout my new branch
+all this will keep on switching the branch
+
+Now lets go to the a differet branch
+git checkout my new branch
+ and now lets add somefile here now remember we are in different branch which is not pushed to the server yet, now lets do
+git add .
+git commit ....
+git push -u origin mybranch 
+doneeeeeeeeee
+now in git you will have two branches you can see the file added in a new branch but no in the master.
+so now if you go to your online account (collabaortor) accoutn you will see a button called "pull and merge request) so you need to click that add some comment and get done with it.
+
+Now role of Owner of project will come now becasuse he has the review the changes and merge it to the master branch.he branches
+
+
+
  
 
 
