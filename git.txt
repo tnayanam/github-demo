@@ -158,6 +158,20 @@ Now all the fun stuff will come into picture:
 SO now even though the new branch was deleted it still exists in the local system, so tis better to get rid of it. for nay confusion if you want to knwo which branch got merged, now you can run below command.
 git branch --merged this will tell which branch is merged into master.
 
+now lets delete the branch: git branch -d newbranch : now this will delete that new branch which was merged to the main form local repo. so finally we dont have tthis branch anymore.
+we only have master clone in local repo 
+
+=============================================
+Merge Conflicts
+=============================================
+Suppose you modified some file and commited it, and someelse in th eman time modified a different file and commited and pushed it, and now if you go to push your own origial commit, 
+ if you get the Upadtes are pending error message you can simple use git pull and it will work, since files that others have modififed is different so git pull and the git push and you should be all set.
+But if same file is there you might get merge conflicts, and then you need to open the file with merge conflict and investigate on it.
+
+
+
+
+
 
 
 
