@@ -103,8 +103,27 @@ Adding a collaborator:
 Go to the online repo and go to settings and add a collaborator.
 
 
+Cloning a repo
+========================================================================
+git clone address => this will give you the link to the repo.
+and obviously this will be the origin. as you are not creating any branch.
+
+so till now MASTER (master remote)  -> Dev   (REMOTE)
+
+					   Dev  (Local)
+					   
+					   Before making any changes do a Git Pull origin BRANCHNAME
+					   Since we are in dev branch from where we cloned, we will do git pull origin {brnachname}, this will  give us the latest of code in remote dev repo.
+					   Ideally doing this should show you the newly pulled files. (changes made my other to the Dev Branch.
+					   at this point git status will show you that eveything is clean.
+					   Now time to make some change here (local dev branch) my actual code will go here.
+					   now git add --{filename}
+					   git commit -m "my changes"
+					   git push -u orgin master  (p.s: my current master is Dev located in server). but when this change will be pushed it will go to remote DEV Branch.
+============================================
 adding a branch
-git checkout -b "my new branch"
+============================================
+once you have all the code you can create a separate branch also, at the root folder you can simply say : git checkout -b "my new branch"
 
 it will create a branch and switch it to that branch, now you can do git status and it will show you the branch you are in. :)
 
@@ -118,12 +137,30 @@ git checkout my new branch
  and now lets add somefile here now remember we are in different branch which is not pushed to the server yet, now lets do
 git add .
 git commit ....
-git push -u origin mybranch 
-doneeeeeeeeee
+git push -u origin mybranch  // this push my code changes and since the branch is not laready existing it pushes the branch too.
+
+doneeeeeeeeee, so now a new branch is created on server.
 now in git you will have two branches you can see the file added in a new branch but no in the master.
 so now if you go to your online account (collabaortor) accoutn you will see a button called "pull and merge request) so you need to click that add some comment and get done with it.
 
-Now role of Owner of project will come now becasuse he has the review the changes and merge it to the master branch.he branches
+So now we need to crate a pull request for the owner (so more like we are telling ower please (pull our changes), meaning please merge these changes to main branch. This I might need to do, because I will push to dev.
+
+Now role of Owner of project will come now becasuse he has the review the changes and merge it to the master branch.he branches..
+
+Kindly note that when a branch is merged to main branch then that branch can be deleted because all its changes are already taken care. NOw we canc reate anotehr brnach and work. just saying..
+
+now if you have deleted the temp branch, so go back again to master branch or dev branch and again create a branch and work on it, and do git pull. so get the latest changes.
+But wait, when you go to master brnach you need to pull the master branch because your local master repo does nothave the local pull code, so now pull again before creating the new branch. the fle that you had added or manipulation you had done forwhich you crated 
+the pull request which was merged by owner was all in your branch which is deleted after the pull request complete. so all this you need to do.
+
+Now all the fun stuff will come into picture: 
+
+SO now even though the new branch was deleted it still exists in the local system, so tis better to get rid of it. for nay confusion if you want to knwo which branch got merged, now you can run below command.
+git branch --merged this will tell which branch is merged into master.
+
+
+
+
 
 
 
