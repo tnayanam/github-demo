@@ -167,6 +167,29 @@ Merge Conflicts
 Suppose you modified some file and commited it, and someelse in th eman time modified a different file and commited and pushed it, and now if you go to push your own origial commit, 
  if you get the Upadtes are pending error message you can simple use git pull and it will work, since files that others have modififed is different so git pull and the git push and you should be all set.
 But if same file is there you might get merge conflicts, and then you need to open the file with merge conflict and investigate on it.
+=============================================
+Forking a Repository
+=============================================
+Suppose we are not a collaborator in the repository and we want to work on that repository then we can fork the repository and it will create a separate branch to your git.
+=====================================================================================================================================
+Git Stash - When you are not ready to make a commit yet and you need to work in something else, then what to do with the local stash
+=====================================================================================================================================
+now you have some local changes which you have not even added yet. so jsut type git stash
+now if you type git status you dirctory will be clean now, as you ont have any local changes. 
+
+git stash pop (this is nice) so even if you have added something to staging area (git add .) that also will be brought to your local repo.
+So your local changes not added/staged as well as your staged changes.
+
+git stash pop --index -------- DO NOT retrieve your staged changes.
+
+ALWAYS GET YOUR STASH CHNAGES BACK BEFORE MAING NAY CHANGES TO YOUR LOCAL Repository
+=========================
+Get Rid of Local Changes
+=========================
+	git reset --hard  : It will clean your local repo.
+
+
+
 
 
 
